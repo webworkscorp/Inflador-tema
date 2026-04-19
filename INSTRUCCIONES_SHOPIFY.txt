@@ -1,0 +1,11 @@
+// CÓDIGO SECCIÓN SHOPIFY (COPIAR Y PEGAR) - VERSIÓN SIN ERRORES LIQUID
+
+// Instrucciones:
+// 1. Ve a Shopify Admin > Tienda Online > Temas > Editar código.
+// 2. En la carpeta "Sections" (Secciones), haz clic en "Añadir una nueva sección".
+// 3. Llámala: novahogar-landing
+// 4. Copia TODO el contenido del archivo /shopify_theme/sections/novahogar-landing.liquid  <----- (Usa este archivo)
+// 5. Pégalo en tu nueva sección y guarda.
+// 6. Ahora ve al botón verde "Personalizar" (Customize) tu tema.
+// 7. Navega a tu Producto.
+// 8. Oculta las secciones predeterminadas si lo deseas, haz clic en "Añadir sección", y selecciona "NovaHogar Landing".

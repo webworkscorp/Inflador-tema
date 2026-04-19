@@ -1,0 +1,26 @@
+
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+  <div class="px-4 h-16 flex items-center justify-between">
+    <div class="flex items-center">
+      <h1 class="text-xl font-extrabold tracking-tighter text-primary font-display">
+        NovaHogar<span class="text-secondary">CR</span>
+      </h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="/cart" class="relative p-2 text-primary hover:text-secondary transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        {% if cart.item_count > 0 %}
+          <span class="absolute top-0 right-0 -mt-1 -mr-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-600 text-[10px] font-bold text-white shadow-sm ring-2 ring-white">
+            {{ cart.item_count }}
+          </span>
+        {% endif %}
+      </a>
+    </div>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Header",
+  "settings": []
+}
+{% endschema %}

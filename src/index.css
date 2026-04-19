@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  /* Premium D2C High-Trust Palette */
+  --color-primary: #09090b;       /* Very deep, crisp black for main elements */
+  --color-secondary: #52525b;     /* Slate-like gray for secondary text */
+  --color-success: #059669;       /* Trustworthy, established green */
+  --color-border: #e4e4e7;        /* Clean, subtle borders */
+  
+  --radius-shopify: 6px;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-primary bg-white antialiased;
+  }
+}
