@@ -10,7 +10,7 @@ fs.mkdirSync(themeDir);
 dirs.forEach(d => fs.mkdirSync(path.join(themeDir, d)));
 
 // Extraer CSS
-const htmlContent = fs.readFileSync('NovaHogarCR_LandingPage.html', 'utf-8');
+const htmlContent = fs.readFileSync('NovaHogarCR_LandingPage_Estatica.html', 'utf-8');
 const styleMatch = htmlContent.match(/<style[^>]*>([\s\S]*?)<\/style>/);
 const cssContent = styleMatch ? styleMatch[1] : '';
 fs.writeFileSync(path.join(themeDir, 'assets', 'styles.css'), cssContent);
